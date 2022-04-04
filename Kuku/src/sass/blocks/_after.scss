@@ -1,0 +1,58 @@
+.after-section {
+    background-color: rgba(197, 239, 116, 0.2);
+    padding: 55px 0 44.32px;
+    @media (max-width: $lg-screen-min) {
+        padding: 37.56px 0 44.32px;
+    }
+    .after-wrapper {
+        position: relative;
+        @include extra-block;
+        &:after {
+            background-color: $orange;
+            @media (max-width: $md-screen-min) {
+                height: 100%;
+            }
+        }
+        &.after-wrapper__sec {
+            &:after {
+                background-color: $blue;
+            }
+        }
+        .after {
+            padding: 48px;
+            position: relative;
+            background-color: #FFFFFF;
+            z-index: 2;
+            border: 1px solid $font-color;
+            @media (max-width: $md-screen-min) {
+                padding: 43.88px 15.27px 27.49px 26.82px;
+            }
+            .h1 {
+                margin-bottom: 18px;
+            }
+            .after-module {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px 76px;
+                padding-left: 16px;
+                @media (max-width: $md-screen-min) {
+                    grid-template-columns: none;
+                    grid-template-rows: 1fr;
+                    gap: 20px 0;
+                }
+                .after-module__item {
+                    font-family: 'Open Sans';
+                    font-size: 18px;
+                    line-height: 28px;
+                     @media (max-width: $md-screen-min) {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                    &::marker {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}

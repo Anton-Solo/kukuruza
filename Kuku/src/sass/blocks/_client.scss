@@ -1,0 +1,31 @@
+.client {
+    margin-bottom: 152.7px;
+    @media (max-width: $lg-screen-min) {
+        margin-bottom: 63px;
+    }
+    .h1 {
+        margin-bottom: 96.17px;
+        @media (max-width: $lg-screen-min) {
+            margin-bottom: 32.48px;
+        }
+    }
+    .client-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+        .client-item {
+            max-width: 210px;
+            @media (max-width: $lg-screen-min) {
+                max-width: 100px;
+            }
+            &:not(:last-child) {
+                margin-right: 40px;
+                @media (max-width: $lg-screen-min) {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}

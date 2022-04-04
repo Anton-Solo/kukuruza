@@ -1,0 +1,125 @@
+.module-section {
+    hr {
+        margin-bottom: 48.68px;
+        @media (max-width: $lg-screen-min) {
+            margin-bottom: 30.41px;
+        }
+    }
+    ._module {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 66.64px;
+        @media (max-width: $lg-screen-min) {
+            padding-bottom: 37.39px;
+        }
+        &.module-sec {
+            padding-top: 118.68px;
+            padding-bottom: 71px;
+            @media (max-width: $lg-screen-min) {
+                padding-top: 70.76px;
+                padding-bottom: 43.49px;
+            }
+        }
+        ._module-left {
+            flex-basis: 764px;
+            margin-right: 15px;
+            @media (max-width: $lg-screen-min) {
+                margin-right: 0;
+            }
+            ._module-week {
+                margin-bottom: 32.32px;
+                @media (max-width: $lg-screen-min) {
+                    margin-bottom: 15px;
+                }
+                span {
+                    @include module-span;
+                    color: $orange;
+                    @media (max-width: $md-screen-min) {
+                        font-size: 12px;
+                        line-height: 48px;
+                    }
+                }
+                &.module-first__week {
+                    span:not(:last-child) {
+                        margin-right: 40px;
+                    }
+                }
+                &.module-sec__week {
+                    span {
+                        color: $blue;
+                        &:not(:last-child) {
+                            margin-right: 34px;
+                            @media (max-width: $md-screen-min) {
+                                margin-right: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+            .h2 {
+                margin-bottom: 134.68px;
+                @media (max-width: $lg-screen-min) {
+                    margin-bottom: 80.48px;
+                }
+                @media (max-width: $md-screen-min) {
+                    margin-bottom: 40.48px;
+                }
+            }
+            ._module-menu {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                @media (max-width: $md-screen-min) {
+                    flex-direction: column;
+                }
+                ._module-menu__item {
+                    font-family: 'Open Sans';
+                    position: relative;
+                    font-size: 18px;
+                    line-height: 25px;
+                    flex-basis: 195px;
+                    @media (max-width: $md-screen-min) {
+                        flex-basis: auto;
+                        padding-left: 74px;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                    &:not(:last-child) {
+                        margin-right: 24px;
+                        @media (max-width: $md-screen-min) {
+                            margin: 0 0 25px 0;
+                        }
+                    }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: -53px;
+                        left: -10px;
+                        transform: rotate(-19deg);
+                        width: 46px;
+                        height: 41px;
+                        background-size: 100%;
+                        background-image: url(../../img/star.png);
+                        @media (max-width: $md-screen-min) {
+                            left: 0;
+                            top: 0;
+                            width: 32.66px;
+                            height: 29.11px;
+                        }
+                    }
+                }
+            }
+        }
+        ._module-right {
+            flex-basis: 210px;
+            @media (max-width: $lg-screen-min) {
+                display: none;
+            }
+            &.module-sec__right {
+                flex-basis: 293px;
+            }
+        }
+       
+    }
+}

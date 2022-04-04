@@ -1,0 +1,94 @@
+@import 'base/fonts';
+@import 'base/mixins';
+@import 'base/variables';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #FF6F31;
+}
+.main {
+    background-color: #FFF7F3;
+    border: 1px solid $font-color;
+}
+* ,
+*:before,
+*:after {
+    font-family: 'Ermilov';
+    font-weight: 400;
+    box-sizing: border-box;
+    outline: none;
+    color: #000000;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    @media (max-width: $md-screen-min) {
+        font-size: 30px;
+        line-height: 31px;
+    }
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    text-transform: uppercase;
+    @media (max-width: $md-screen-min) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+._container {
+    padding: 0 60px;
+    @media (max-width: $md-screen-min) {
+        padding: 0 19.09px 0 14.81px;
+    }
+}
+
+.main {
+    height: 100%;
+    margin: 50px auto;
+    @media (max-width: $md-screen-min) {
+        margin: 16.5px auto 17.53px;
+    }
+    @media (min-width: 375px) {
+        width: 320px;
+    }
+    @media (min-width: 460px) {
+        width: 440px;
+    }
+    @media (min-width: $sm-screen) {
+        width: 540px;
+    }
+    @media (min-width: $md-screen) {
+        width: 720px;
+    }
+    @media (min-width: $lg-screen) {
+        width: 960px;
+    }
+    @media (min-width: $xlg-screen) {
+        width: 1280px;
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/course';
+@import 'blocks/module';
+@import 'blocks/after';
+@import 'blocks/who';
+@import 'blocks/price';
+@import 'blocks/client';
+@import 'blocks/footer';

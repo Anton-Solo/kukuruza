@@ -1,0 +1,104 @@
+.who {
+    padding: 170.92px 0 170.84px;
+    @media (max-width: $lg-screen-min) {
+        padding: 80.9px 0;
+    }
+    .h1 {
+        margin-bottom: 48px;
+    }
+    .who-descr {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @media (max-width: $lg-screen-min) {
+            grid-template-columns: none;
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .who-descr__item {
+            border-top: 1px solid $font-color;
+            border-bottom: 1px solid $font-color;
+            padding: 60px 0 76.08px;
+            @media (max-width: $md-screen-min) {
+                padding: 25.09px 18.02px 25.57px 14.17px!important;
+                border-left: none!important;
+                border-right: none!important;
+                &:not(:last-child) {
+                    border-bottom: none!important;
+                }
+            }
+            &:first-child {
+               padding-left: 60px;
+               border-right: 1px solid $font-color;
+            }
+            &:nth-child(2) {
+                padding-left: 58px;
+                padding-right: 58px;
+            }
+            &:last-child {
+                padding-left: 48px;
+                padding-right: 60px;
+                border-left: 1px solid $font-color;
+             }
+            &>span {
+                display: block;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: $orange;
+                margin-bottom: 14px;
+                @media (max-width: $md-screen-min) {
+                    margin-bottom: 9px;
+                }
+            }
+            .who-descr__head {
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 38px;
+                text-transform: uppercase;
+                margin-bottom: 24px;
+                @media (max-width: $md-screen-min) {
+                    font-size: 18px;
+                    margin-bottom: 11px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            .who-descr__txt {
+                position: relative;
+                padding-left: 17px;
+                max-width: 288px;
+                @media (max-width: $lg-screen-min) {
+                    max-width: none;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 12px;
+                    width: 6px;
+                    height: 6px;
+                    background-color: $orange;
+                    border-radius: 100%;
+                    @media (max-width: $md-screen-min) {
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                span {
+                    font-family: 'Open Sans';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    @media (max-width: $md-screen-min) {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }   
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.price {
+    margin-bottom: 100px;
+    @media (max-width: $lg-screen-min) {
+        margin-bottom: 80.93px;
+    }
+    .h1 {
+        margin-bottom: 50px;
+        @media (max-width: $lg-screen-min) {
+            margin-bottom: 29.57px;
+        }
+    }
+    .price-menu__wrapper {
+        position: relative;
+        @include extra-block;
+        margin-bottom: 195px;
+        @media (max-width: $lg-screen-min) {
+            margin-bottom: 145.46px;
+        }
+        &:after {
+            height: 115%;
+            background-color: $font-color;
+        }
+        .price-for-course {
+            position: absolute;
+            left: 21px;
+            z-index: 4;
+            bottom: -73px;
+            font-size: 52.4045px;
+            line-height: 65px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            @media (max-width: $md-screen-min) {
+                font-size: 30px;
+                line-height: 65px;
+                bottom: -58px;
+            }
+        }
+        .price-menu {
+            position: relative;
+            z-index: 2;
+            list-style: none;
+            padding: 12px 52.4px 17px;
+            border: 1.34023px solid $font-color;
+            background-color: #FFFFFF;
+            @media (max-width: $md-screen-min) {
+                padding: 25.51px 12.85px 24.14px 14.17px;
+            }
+            .price-menu__item {
+                font-size: 26.2022px;
+                line-height: 24px;
+                text-transform: uppercase;
+                padding: 9px 0;
+                @media (max-width: $md-screen-min) {
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 16.58px 0 14.88px;
+                }
+                &:not(:last-child) {
+                    border-bottom: 1.34023px solid $font-color;
+                }
+            }
+        }
+    } 
+    .price-btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media (max-width: $md-screen-min) {
+            flex-direction: column;
+        }
+        .btn-wrapper {
+            position: relative;
+            margin-right: 5px;
+            flex-basis: 415px;
+            @include extra-block;
+            @media (max-width: $md-screen-min) {
+                flex-basis: auto;
+                width: 252px;
+            }
+            .blue-btn {
+                @include blue-btn;
+            }
+            .white-btn {
+                @include white-btn;
+            }
+            &-wh {
+                flex-basis: 479px;
+                margin-left: 30px;
+                @media (max-width: $md-screen-min) {
+                    width: 252px;
+                    flex-basis: auto;
+                    margin-left: 0;
+                    margin-top: 22.35px;
+                }
+                &:after {
+                    background-color: $blue;
+                }
+            }
+            a {
+                font-size: 31.8738px;
+            }
+        }
+        
+    }
+}

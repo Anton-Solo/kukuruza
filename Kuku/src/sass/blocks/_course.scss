@@ -1,0 +1,108 @@
+.course {
+    margin-bottom: 166.31px;
+    display: flex;
+    align-items: center;
+    @media (max-width: $lg-screen-min) {
+        flex-direction: column-reverse;
+        margin-bottom: 65.59px;
+        .course-img {
+            max-width: 240px;
+            margin-bottom: 40.69px;
+        }
+    }
+    .course-about {
+        margin-right: 24px;
+        @media (max-width: $lg-screen-min) {
+            margin-right: 0;
+        }
+        .h1 {
+            margin-bottom: 65px;
+            @media (max-width: $lg-screen-min) {
+                margin-bottom: 41.85px;
+            }
+            @media (max-width: $md-screen-min) {
+                line-height: 24px;
+            }
+            span {
+                font-size: 34px;
+                line-height: 102.6%;
+                color: $orange;
+                @media (max-width: $md-screen-min) {
+                    font-size: 18px;
+                }
+            }
+        }
+        .course-about__descr {
+            margin-bottom: 30.88px;
+            @media (max-width: $lg-screen-min) {
+                margin-bottom: 23.39px;
+            }
+            p {
+                font-family: 'Open Sans';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                margin: 0;
+                @media (max-width: $md-screen-min) {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                &:first-child {
+                    margin-bottom: 20.12px;
+                    @media (max-width: $lg-screen-min) {
+                        margin-bottom: 10.53px;
+                    }
+                }
+            }
+        }
+        .course-about__duration {
+            margin-bottom: 65px;
+            @media (max-width: $lg-screen-min) {
+                margin-bottom: 41.06px;
+            }
+            span {
+                @include module-span;
+                color: $blue;
+            }
+        }
+        .course-about__btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media (max-width: $md-screen-min) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: initial;
+            }
+            .btn-wrapper {
+                position: relative;
+                margin-right: 20px;
+                flex-basis: 260px;
+                @include extra-block;
+                @media (max-width: $md-screen-min) {
+                    max-width: 215px;
+                    flex-basis: auto;
+                    margin-right: 0;
+                }
+                .blue-btn {
+                    @include blue-btn;
+                }
+                .white-btn {
+                    @include white-btn;
+                }
+                &-wh {
+                    flex-basis: 309px;
+                    @media (max-width: $md-screen-min) {
+                        margin-top: 19px;
+                        max-width: 215px;
+                        flex-basis: auto;
+                    }
+                    &:after {
+                        background-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+    
+}
